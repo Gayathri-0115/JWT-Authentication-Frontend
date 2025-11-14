@@ -1,0 +1,86 @@
+.container{
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(125deg, #292828 0%, #636161 100%);
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgba(209, 204, 204, 0.3);
+    border-radius: 25px;
+    gap: 20px;
+}
+h2{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    padding: 0.5rem ;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 1rem;
+    box-shadow: inset 2px 2px 4px rgba(209, 204, 204, 0.3);
+}
+.input-box{
+    background-color: rgba(241, 243, 243, 0.733);
+    border-radius: 10px;
+}
+.mail-icon{
+    margin-left: -30px;
+    color: gray;
+}
+.pw-icon{
+    margin-left: -30px;
+    color: gray;
+}
+.form-button{   margin: 20px 0 0 0;
+    padding: 10px ;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.form-button:hover{
+    background-color: rgb(37, 37, 37);
+}
+p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.register{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    cursor: pointer;
+}
+input::placeholder{
+    color: gray;
+    font-size: 0.9rem;
+}
+@media screen and (max-width:768px) {
+    .login-form{
+    padding: 30px 20px;
+    gap: 15px;
+    margin: 1rem;
+}
+}

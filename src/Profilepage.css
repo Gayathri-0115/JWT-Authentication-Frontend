@@ -1,0 +1,105 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url('./assets/bgforauth.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    color: white;
+}
+
+.authimg {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.grid-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    place-items: center;
+    margin: 0 2.5rem;
+}
+
+.grid-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-one h2 {
+    font: bold 2.5rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 3rem;
+    color: rgb(150, 198, 240);
+}
+
+.grid-one p {
+    font: 1.5rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2.5rem;
+    line-height: 2.2rem;
+    text-align: left;
+    word-spacing: 0.3rem;
+}
+
+.login {
+    padding: 0.5rem 2.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(36, 145, 247);
+    transition: all 0.2s ease-in;
+}
+
+.login:hover {
+    background-color: rgb(11, 89, 161);
+    box-shadow: 2px 2px 40px rgba(80, 226, 231, 0.2);
+}
+
+.signup {
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(41, 219, 83);
+    transition: all 0.2s ease-in;
+}
+
+.signup:hover {
+    background-color: rgb(19, 182, 19);
+    box-shadow: 0px 1px 20px rgb(120, 248, 120);
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+@media screen and  (max-width: 768px) {
+    .grid-sec {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+        margin-top: 2rem;
+    }
+    .grid-one p {
+    font: 1rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2.5rem;
+    line-height: 2.2rem;
+    text-align: left;
+    word-spacing: 0.2rem;
+}
+}

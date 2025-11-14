@@ -1,0 +1,98 @@
+.home-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #f8fafc;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    background-color: rgb(250, 252, 250);
+}
+.nav-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+.nav-btn:hover{
+    background-color: rgb(248, 74, 74);
+    box-shadow: 1px 2px 10px rgb(248, 74, 74) ;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns:  1fr;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+.grid-first{
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin:0 2rem;
+    border-radius: 50px 0 50px 0;
+    background: linear-gradient(to right, rgb(37, 36, 36),rgb(126, 125, 125));
+}
+.grid-first h4{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(250, 196, 196);
+}
+.grid-first p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(240, 240, 239);
+}
+.grid-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    padding: 2rem 1rem;
+    margin: 0 2rem;
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+    background-color: #f7f7f7;
+}
+.grid-second h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: rgb(252, 57, 57);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.details p{
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+}
+@media screen and (max-width:768px) {
+    .grid-first h4{
+        font-size: 2rem;
+    }
+}
