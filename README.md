@@ -17,10 +17,6 @@ It includes pages for **Register**, **Login**, **Welcome**, and **Home**, and co
 - Logout functionality
 - Error handling for invalid credentials
 
-## 📁 Project Structure
-
-src/ ├── pages/ ├── components/ ├── App.js ├── index.js └── styles/
-
 ## ⚙️ How to Run
 ```bash
 npm install
